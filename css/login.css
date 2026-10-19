@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #172b3b;
+    font-family: sans-serif;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.login_header h2 {
+    color: black;
+    font-size: 2.5em;
+}
+
+.login_header img {
+    width: 30vh;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login_header h1 {
+    color: black;
+    font-size: 5em; 
+    margin: 0;
+    font-weight: bold;
+}
+
+.login_input {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em; 
+    max-width: 500px; 
+    min-width: 500px;
+    padding: 20px;  
+    width: 50%;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login_button {
+    background-color: burlywood;
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: 300px;
+    min-width: 250px;
+    width: 25%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login_button:not(:disabled):hover {
+    background-color: #c9a074;
+    transform: scale(1.02);
+}
+
+.login_button:disabled {
+    background-color: #bbb8b8;
+    color: #6b6565;
+    transform: none;
+}

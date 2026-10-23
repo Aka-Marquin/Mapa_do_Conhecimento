@@ -1,7 +1,16 @@
+:root {
+    --fundo: #f4f5f6;
+    --azul: #172b3b;
+    --laranja: #ff914d;
+    --texto: #20252a;
+    --cartao: #89919a;
+    --branco: #ffffff;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    background-color: #2b5170;
+    background-color: #c8e4ff;
     width: 100%;
     min-height: 100vh;
     align-items: center;
@@ -13,8 +22,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: orange;
-    border: 2px solid white;
+    background-color: rgb(206, 134, 1);
+    border: 2px solid black;
     width: 100%;
     max-width: 75vh;
     padding: 15px 25px;
@@ -66,21 +75,10 @@ header {
 }
 
 .back {
-    background-color: #ff914d;
+    background-color: rgb(206, 134, 1);
     backface-visibility: hidden;
-    
+    border: 2px solid black;
 }
-
-
-:root {
-    --fundo: #f4f5f6;
-    --azul: #172b3b;
-    --laranja: #ff914d;
-    --texto: #20252a;
-    --cartao: #89919a;
-    --branco: #ffffff;
-}
-
 
 .menu {
     margin: 100px;

@@ -76,7 +76,7 @@ footer {
     border-radius: 50px;
 }
 
-/* TENTATIVA E FALHA MISERAVEL DE UM TEMA ESCURO*/
+/* TENTATIVA E MUITAS FALHAS, MAS TEMOS UM MISERAVEL TEMA ESCURO*/
 body.tema-escuro {
     --fundo: #14212d;
     --texto: #f4f7fb;

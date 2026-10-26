@@ -48,7 +48,7 @@ body {
     text-align: center;
     margin-top: 50px;
 
-    /* TESTE ALTERNANCIA TEMA DIFERENTE DE FUNDO (LA ELEAGEM?) */
+    /* TESTE ALTERNANCIA TEMA DIFERENTE DE FUNDO! (LA ELEAGEM?) */
     background: var(--fundo);
     color: var(--texto);
 

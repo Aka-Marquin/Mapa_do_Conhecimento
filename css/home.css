@@ -73,6 +73,7 @@ body {
     justify-content: center;
     gap: 45px;
     margin-top: 30px;
+    min-width: 50px;
 }
 
 .cartao-categoria {
@@ -130,7 +131,7 @@ body {
     display: flex;
     gap: 10px;
     color: white;
-     text-decoration: none;
+    text-decoration: none;
     color: inherit;
 }
 

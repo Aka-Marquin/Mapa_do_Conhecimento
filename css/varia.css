@@ -40,16 +40,6 @@ footer {
     text-align: center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--branco);
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-}
-
 body.tema-escuro {
     --fundo: black;
     --texto: black;

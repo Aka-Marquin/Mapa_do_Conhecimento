@@ -68,10 +68,12 @@ body {
   border-radius: 20px;
 }
 .categorias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
     margin-top: 30px;
+    min-width: 50px;
 }
 
 .cartao-categoria {
@@ -126,7 +128,7 @@ body {
     display: flex;
     gap: 10px;
     color: white;
-     text-decoration: none;
+    text-decoration: none;
     color: inherit;
 }
 

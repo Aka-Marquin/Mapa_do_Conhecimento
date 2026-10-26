@@ -68,17 +68,19 @@ body {
   border-radius: 20px;
 }
 .categorias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
     margin-top: 30px;
 }
 
 .cartao-categoria {
+    margin-top: 50px;
     min-height: 100px;
     padding: 22px;
     border-radius: 25px;
-    background: var(--cartao);
+    background: var(--azul);
     color: var(--branco);
     text-align: center;
     text-decoration: none;
@@ -96,8 +98,10 @@ body {
 }
 
 .cartao-categoria:hover {
-    transform: scale(1.025);
-    background-color: black;
+    transform: scale(1.1);
+    background-color: rgb(7, 96, 126);
+    color: white;
+    border: 1.5px solid darkblue;
 }
 
 .emoji {

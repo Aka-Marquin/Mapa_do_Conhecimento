@@ -1,10 +1,9 @@
-:root{
-    --fundo: #f4f5f6;
-    --azul: #2269B3;
-    --laranja: #F2A90D;
-    --texto: #20252a;
-    --cartao: #89919a;
+:root {
+    --fundo: #f4f7fb;
+    --texto: #183247;
     --branco: #ffffff;
+    --azul: #0866b3;
+    --laranja: #ff914d;
     --altura--header: 7.5vh;
     --altura--footer: 15vh;
 }
@@ -36,8 +35,15 @@
 }
 
 footer {
-    padding: 25px;
-    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: var(--azul);
+    color: white;
 }
 
 .logo {
@@ -50,10 +56,33 @@ footer {
     font-weight: bold;
 }
 
+.teste-perfil{
+    display: flex;
+    gap: 10px;
+    color: white;
+     text-decoration: none;
+    color: inherit;
+}
+
+.teste-perfil a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.teste-perfil img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+/* TENTATIVA E FALHA MISERAVEL DE UM TEMA ESCURO*/
 body.tema-escuro {
-    --fundo: black;
-    --texto: black;
-    --cartao: var(--laranja);
+    --fundo: #14212d;
+    --texto: #f4f7fb;
+    --branco: #253747;
+    --azul: #245b86;
+    --laranja: #e58a4c;
 }
 
 body.tema-escuro .conteudo-pagina,

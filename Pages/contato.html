@@ -5,35 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Mapa do Conhecimento</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html">Inicio</a>
-        <a href="../temas.html">Temas</a>
-        <a href="../sobre.html">Sobre</a>
-        <a href="../contato.html">Contato</a>
-        <button id="botao-tema" type="button">🌙</button>
+     <header id="header" class="header">
+
+        <div class="teste-perfil">
+       <h1><a  href="./index.html">Mapa do Conhecimento</a></h1>
+        </div>
+
+        <nav class="menu">
+            <a href="/index.html">Inicio</a>
+            <a href="../Pages/temas.html">Temas</a>
+            <a href="../Pages/sobre.html">Sobre</a>
+            <a href="../Pages/contato.html">Contato</a>
+            <button id="botao-tema" type="button">🌙</button>
+        </nav>
     </header>
 
     <main>
-        <section class="conteudo-pagina">
-            <p>Inicio/Contato</p>
-            <p>Entre em contato</p>
+         <section id="contato" class="pagina">
 
-        <form class="" id="">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" placeholder="Digite seu nome" required>
-            
-            <label for="email">E-mail</label>
-            <input id="nome" name="nome" title="email" placeholder="login@exemplo.com" required>
+        <div class="Contato-title">    
+        <h3>Entre em contato</h3>
+        <p>Tem uma dúvida, sugestão ou ideia para o projeto?
+        Escreva uma mensagem pra gente!</p>
+        </div>
 
-            <label for="mensagem">Mensagem</label>
-            <input id="mensagem" name="mensagem" type="text" placeholder="Escreva sua mensagem" required>
+        <div class="area-contato">
+       <!--<div class="equipe">
+                <h3>Nossa equipe:</h3>
 
-            <button class="botao" type="submit">Enviar mensagem</button>
-        </form>
-        </section>
+                <div class="membro">👤 Integrante </div>
+                <div class="membro">👤 Integrante </div>
+                <div class="membro">👤 Integrante </div>
+                <div class="membro">👤 Integrante </div>
+                <div class="membro">👤 Integrante </div>
+            </div>-->
+
+            <form class="formulario" onsubmit="enviarMensagem(event)">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5"
+                placeholder="Escreva sua mensagem aqui..."
+                required></textarea>
+
+                <button id="botao" type="submit">✉ Enviar mensagem</button>
+
+                <p id="aviso"></p>
+            </form>
+
+            <div class="senaco">
+                <img src="../assets/imgs/contat.png">
+            </div>
+
+        </div>
+    </section>
     </main>
 
-    <footer>Mapa do Conhecimento • Aprender pode ser simples.</footer>
+ <!--FIRST PERSON "FOOTER"-->
+<footer>Mapa do Conhecimento • Aprender pode ser simples.</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>

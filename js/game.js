@@ -11,7 +11,6 @@ const characters = [
    'ptolomeo',
    'René',
    'tesla'
-
 ]
 
 const createElement = (tag, className) => {
@@ -27,7 +26,7 @@ let cartaDOIS = ''
 const fimDeJogo = () =>{
     const achounenê = document.querySelectorAll('.achounenê')
 
-    if (achounenê.length === 24){
+    if (achounenê.length === 16){
         clearInterval(this.loop)
         alert (`PARABENS, ${Spanplayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`)
     }

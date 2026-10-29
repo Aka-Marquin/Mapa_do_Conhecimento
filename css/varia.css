@@ -8,6 +8,13 @@
     --altura--footer: 15vh;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -34,17 +41,18 @@
     gap: 20px;
 }
 
-footer {
+.footer{
     padding: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background: var(--azul);
+    background-color: var(--azul);
     color: white;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+    max-height: 100px;
+    position: sticky; 
+    top: 100vh;
 }
+
 
 .logo {
     display: flex;

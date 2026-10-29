@@ -10,6 +10,20 @@ main {
     padding: 20px 20px 50px;
 }
 
+.legenda{
+    margin-top: 75px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.legenda p{
+    background-color: lightcyan;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 
 header {
     display: flex;

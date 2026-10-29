@@ -48,7 +48,7 @@ body {
     text-align: center;
     margin-top: 50px;
 
-    /* TESTE ALTERNANCIA TEMA DIFERENTE DE FUNDO! (LA ELEAGEM?) */
+    /* TESTE ALTERNANCIA TEMA DIFERENTE DE FUNDO! */
     background: var(--fundo);
     color: var(--texto);
 
@@ -75,7 +75,7 @@ body {
     min-height: 100px;
     padding: 22px;
     border-radius: 25px;
-    background: var(--azul);
+    background: var(--laranja);
     color: var(--branco);
     text-align: center;
     text-decoration: none;
@@ -120,24 +120,3 @@ body {
     background: var(--laranja);
     cursor: pointer;
 }
-
-.teste-perfil{
-    display: flex;
-    gap: 10px;
-    color: white;
-     text-decoration: none;
-    color: inherit;
-}
-
-.teste-perfil a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.teste-perfil img{
-    width: 35px;
-    height: 35px;
-    border-radius: 50px;
-}
-

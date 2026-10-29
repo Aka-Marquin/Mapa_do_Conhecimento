@@ -1,5 +1,4 @@
 @import url(varia.css);
-@import url(style.css);
 
 .area-contato {
     display: flex;
@@ -7,34 +6,20 @@
     align-items: flex-start;
     gap: 30px;
     padding: 20px 0;
+    margin-top: 60px;
 }
-
-/*.equipe {
-    background-color: var(--azul);
-    color: white;
-    padding: 20px;
-    width: 50%;
-    text-align: center;
-}*/
-
-/*.membro {
-    background-color: var(--laranja);
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 25px;
-}*/
 
 .formulario {
     padding: 25px;
     width: 50%;
-    background-color: #0d3758;
+    background-color: var(--azul);
     border-radius: 25px;
 
     display: flex;
     flex-direction: column;
     gap: 10px;
-
     color: white;
+    box-shadow: 5px 10px 15px #134670;
 }
 
 .formulario label {

@@ -78,12 +78,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.teste-perfil img{
-    width: 35px;
-    height: 35px;
-    border-radius: 50px;
-}
-
 /* TENTATIVA E MUITAS FALHAS, MAS TEMOS UM MISERAVEL TEMA ESCURO*/
 body.tema-escuro {
     --fundo: #14212d;

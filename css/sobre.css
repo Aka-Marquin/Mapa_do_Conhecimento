@@ -1,18 +1,51 @@
 @import url(varia.css);
 @import url(style.css);
 
-/* 
  .equipe {
-    background-color: var(--azul);
-    color: white;
-    padding: 20px;
+    background-color: var(--fundo);
+    color: var(--texto);
+    padding: 15px;
     width: 50%;
+}
+.equipe h1 {
+    margin-bottom: 15px;
     text-align: center;
+}
+
+.equipe2{
+    display: flex;
+    flex-direction: row;
+    align-items: justify;
+    justify-content: center;
+    height: 350px;
+    gap: 25px;
+}
+
+.membro:hover{
+    background-color: var(--azul);
+    transform: scale(1.1);
+    transform: translateX(1,2);
 }
 
 .membro {
     background-color: var(--laranja);
     padding: 15px;
-    margin: 10px 0;
-    border-radius: 25px;
-} */
+    margin: 15px 0;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 250px;
+} 
+
+.hero-conteudo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1{
+    color: var(--laranja);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+

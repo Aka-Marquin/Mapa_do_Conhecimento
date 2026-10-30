@@ -27,6 +27,7 @@
   background: var(--azul);
   color: white;
 }
+
 .hero-imagem {
    display: flex;
    flex-direction: column;

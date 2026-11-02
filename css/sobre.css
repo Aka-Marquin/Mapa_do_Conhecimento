@@ -5,20 +5,76 @@
     background-color: var(--fundo);
     color: var(--texto);
     padding: 15px;
-    width: 50%;
+    width: 100%;
 }
 .equipe h1 {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
 .equipe2{
     display: flex;
     flex-direction: row;
-    align-items: justify;
+    flex-wrap: wrap;
+    align-items: stretch;
     justify-content: center;
-    height: 350px;
+    width: 100%;
     gap: 25px;
+}
+
+.membro {
+    background-color: var(--laranja);
+    color: var(--texto);
+    padding: 20px 15px;
+    margin: 0;
+    border-radius: 15px;
+    text-align: center;
+
+    width: 210px;
+    min-width: 330px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.foto-membro{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+.membro h3 {
+    font-size: 14px;
+    margin: 5px 0 12px;
+}
+
+/*Descrição*/
+.membro p {
+    font-size: 14px;
+    margin: 5px 0 15px;
+}
+
+/*Icone do GitHub*/
+.github {
+    color: var(--texto);
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.github svg{
+    width: 27px;
+    height: 27px;
+}
+
+.github:hover{
+    opacity: 0.7;
 }
 
 .membro:hover{
@@ -27,15 +83,7 @@
     transform: translateX(1,2);
 }
 
-.membro {
-    background-color: var(--laranja);
-    color: var(--texto);
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 15px;
-    text-align: center;
-    min-width: 250px;
-} 
+
 
 .hero-conteudo2{
     display: flex;

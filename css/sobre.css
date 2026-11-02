@@ -2,10 +2,9 @@
 @import url(style.css);
 
  .equipe {
-    background-color: var(--fundo);
-    color: var(--texto);
-    padding: 15px;
     width: 100%;
+    padding: 15px;
+    color: var(--texto);
 }
 .equipe h1 {
     margin-bottom: 25px;
@@ -18,8 +17,8 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    width: 100%;
     gap: 25px;
+    width: 100%;
 }
 
 .membro {
@@ -31,7 +30,7 @@
     text-align: center;
 
     width: 210px;
-    min-width: 330px;
+    min-height: 330px;
 
     display: flex;
     flex-direction: column;
@@ -48,7 +47,7 @@
 }
 
 .membro h3 {
-    font-size: 14px;
+    font-size: 17px;
     margin: 5px 0 12px;
 }
 

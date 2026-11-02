@@ -2,6 +2,9 @@ const grid = document.querySelector('.grid')
 const Spanplayer = document.querySelector('.player')
 const timer = document.querySelector('.timer')
 
+let segundos = 0
+let intervaloTimer = null
+
 const characters = [
    'Aristoteles',
    'Galileo',
@@ -23,12 +26,13 @@ var cartaUM = ''
 let cartaDOIS = ''
 
 
-const fimDeJogo = () =>{
+const fimDeJogo = () => {
     const achounenê = document.querySelectorAll('.achounenê')
 
-    if (achounenê.length === 16){
-        clearInterval(this.loop)
-        alert (`PARABENS, ${Spanplayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`)
+    if (achounenê.length === 16) {
+        clearInterval(intervaloTimer)
+        intervaloTimer = null
+        alert(`PARABÉNS, ${Spanplayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`)
     }
 }
 
@@ -106,13 +110,18 @@ const loadGame = () => {
     })
 }
 
-const startTimer = () =>{
+const startTimer = () => {
+    // CONDIÇÂO DE FAZER UM CRONOMETRO CORRER POR VEZ//
+    if (intervaloTimer !== null) return
 
-this.loop = setInterval(()=>{
+    intervaloTimer = setInterval(() => {
+        segundos++
+    const minutos = Math.floor(segundos / 60) //DIVIDINDO OS NUMEROS POR 60, ja que 1 minuto tem 60 segundos ou 60 segundos sao 1 minutos. //
+    const segundosRestantes = segundos % 60  //PEGA O RESTO DA DIVISAO (1/60), PARA SABER QUANTOS FALTAM PRA COMPLETAR O MINUTO// 
 
-    const tempoAtual = +timer.innerHTML
-    timer.innerHTML = tempoAtual + 1
-}, 1000)
+        timer.innerHTML = `${String(minutos).padStart(2, '0')}:${String(segundosRestantes).padStart(2, '0')}` // ESSE string CONVERTE O AS LETRAS EM NUEMROS, fu ncionaou na linha da cagada e gambiarra //
+        //ESSES padStart DEIXAM OS NUMEROS ACOMPANHADOS DO 0, TIPO AO INVES DE 5 ELE FAZ 05, mas nao funcionoukkkkkkkkkkkkkkkkkkkkkkkk//
+    }, 1000)
 }
 
 

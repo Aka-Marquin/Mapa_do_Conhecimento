@@ -77,3 +77,18 @@
     text-align: center;
     font-size: 15px;
 }
+
+@media only screen and (max-width: 640px){
+    .area-contato{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .formulario{
+        width: 85%;
+    }
+
+    #botao{
+        width: 50%;
+    }
+}

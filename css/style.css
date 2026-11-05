@@ -34,17 +34,24 @@
    max-width: 750px;
    width: 100%;
    flex-wrap: wrap;
-   position: relative;
+   position: sticky;
 }
 
 /* Mascote na frente da fachada */
 .mascote {
     position: absolute;
-    width: 75%;
+    width: 75vh;
     height: max-content;
     right: 0;
     bottom: 0;
     z-index: 2;
+}
+
+.fachada{
+    width: 90vh;
+    position: relative;
+    z-index: 0;
+    height: max-content;
 }
 
 .categorias {
@@ -104,7 +111,8 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 640px){
+
+@media only screen and (max-width: 600px){
    .header{
     display: flex;
     flex-direction: column;
@@ -141,3 +149,124 @@
     margin: 0 auto;
  }
 } 
+
+@media only screen and (min-width: 600px){
+    
+    .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+    max-width: 100%;
+    padding: 3px;
+   }
+
+ .hero{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+ }
+
+ .fachada, .mascote{max-width: 85%; align-self: center;}
+ .busca input{max-width: 80%; margin-bottom: 10px;}
+ .busca button{width: 25%;}
+
+  .categorias{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 30px;
+    min-width: 150px;
+    width: 65%;
+    margin: 0 auto;
+ }
+}  
+
+@media only screen and (min-width: 768px){
+    
+    .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: medium;
+    max-width: 100%;
+    padding: 3px;
+   }
+
+ .hero{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+ }
+
+ .fachada, .mascote{max-width: 85%; align-self: center;}
+ .busca input{max-width: 80%; margin-bottom: 10px;}
+ .busca button{width: 25%;}
+
+  .categorias{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 30px;
+    min-width: 150px;
+    width: 65%;
+    margin: 0 auto;
+ }
+}  
+
+@media only screen and (min-width: 1200px){
+
+   .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: medium;
+    max-width: 100%;
+    padding: 3px;
+   }
+
+ .hero{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+ }
+
+ .fachada{max-width: 150%; align-self: center; right: 55px;}
+ .mascote {max-width: 80%;}
+
+ .busca input{max-width: 100%; margin-bottom: 10px;}
+ .busca button{width: 10%; height: 10%;}
+ .busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+  .categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 30px;
+    min-width: 150px;
+    width: 50%;
+    margin: 0 auto;
+ }
+}

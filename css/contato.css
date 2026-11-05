@@ -1,4 +1,5 @@
 @import url(varia.css);
+@import url(style.css);
 
 .area-contato {
     display: flex;
@@ -78,7 +79,8 @@
     font-size: 15px;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 600px){
+
     .area-contato{
         display: flex;
         flex-wrap: wrap-reverse;
@@ -90,5 +92,68 @@
 
     #botao{
         width: 50%;
+        height: 20%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+   .area-contato{
+        display: flex;
+    }
+
+    #senaco{
+        max-width: 100%;
+    }
+    
+    .formulario{
+        width: 60%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    #botao{
+        width: 50%;
+        height: 20%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .area-contato{
+        display: flex;
+    }
+
+    #senaco{
+        max-width: 100%;
+    }
+    
+    .formulario{
+        width: 60%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    #botao{
+        width: 50%;
+        height: 20%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+      .area-contato{
+        display: flex;
+    }
+
+    #senaco{
+        max-width: 100%;
+    }
+    
+    .formulario{
+        width: 60%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    #botao{
+        width: 50%;
+        height: 20%;
     }
 }

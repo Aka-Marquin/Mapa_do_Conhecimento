@@ -121,3 +121,44 @@ body {
     background: var(--laranja);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px){
+
+  .categorias{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+
+
+}
+  
+@media only screen and (min-width: 600px){
+  .categorias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+
+}  
+
+@media only screen and (min-width: 768px){
+.categorias{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+}  
+
+@media only screen and (min-width: 1200px){
+    
+    .categorias{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 35px;
+    }
+}

@@ -95,6 +95,45 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 600px){
+
+    .senaco{
+        max-width: 90%;
+    }
+    .hero-conteudo{
+        text-align: center;
+        font-size: x-small;
+    }
+}
+
+@media only screen and (min-width: 600px){
+        .senaco{
+        max-width: 90%;
+    }
+    .hero-conteudo{
+        text-align: center;
+        font-size: small;
+    }
+}
+@media only screen and (min-width: 768px){
+        .senaco{
+        max-width: 90%;
+    }
+    .hero-conteudo{
+        text-align: center;
+        font-size: medium;
+    }
+}
+@media only screen and (min-width: 1200px){
     
+    .senaco{
+        max-width: 60%;
+    }
+    .hero{
+        text-align: center;
+        font-size: large;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
 }

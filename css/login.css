@@ -89,3 +89,26 @@ body {
 #Senaco{
     width: 100%;
 }
+
+/* @media only screen and (max-width: 600px){
+    .login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+
+    .login_input {  
+    max-width: 50px;
+}
+}
+
+@media only screen and (min-width: 600px){}
+
+@media only screen and (min-width: 768px){}
+
+@media only screen and (min-width: 1200px){} */

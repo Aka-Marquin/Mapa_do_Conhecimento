@@ -90,25 +90,97 @@ body {
     width: 100%;
 }
 
-/* @media only screen and (max-width: 600px){
-    .login_form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-    }
 
-    .login_input {  
-    max-width: 50px;
+
+@media only screen and (max-width: 600px) {
+  .login_header h2 {
+    font-size: 1.8em;
+  }
+
+  .login_header img {
+    width: 20vh;
+  }
+
+  .login_input {
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 1.4em;
+    padding: 12px;
+  }
+
+  .login_button {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 1.5em;
+    padding: 14px;
+  }
 }
+
+@media only screen and (min-width: 600px) {
+  .login_header h2 {
+    font-size: 2.2em;
+  }
+
+  .login_header img {
+    width: 25vh;
+  }
+
+  .login_input {
+    min-width: 350px;
+    max-width: 450px;
+    font-size: 1.8em;
+  }
+
+  .login_button {
+    min-width: 200px;
+    max-width: 250px;
+    font-size: 1.8em;
+  }
 }
 
-@media only screen and (min-width: 600px){}
 
-@media only screen and (min-width: 768px){}
+@media only screen and (min-width: 768px) {
+  .login_header h2 {
+    font-size: 2.5em;
+  }
 
-@media only screen and (min-width: 1200px){} */
+  .login_header img {
+    width: 28vh;
+  }
+
+  .login_input {
+    min-width: 450px;
+    max-width: 500px;
+    font-size: 2.2em;
+  }
+
+  .login_button {
+    min-width: 220px;
+    max-width: 280px;
+    font-size: 2.2em;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .login_header h2 {
+    font-size: 3em;
+  }
+
+  .login_header img {
+    width: 30vh;
+  }
+
+  .login_input {
+    min-width: 500px;
+    max-width: 600px;
+    font-size: 2.5em;
+  }
+
+  .login_button {
+    min-width: 250px;
+    max-width: 300px;
+    font-size: 2.5em;
+  }
+}

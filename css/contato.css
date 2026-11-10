@@ -1,0 +1,159 @@
+@import url(varia.css);
+@import url(style.css);
+
+.area-contato {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.formulario {
+    padding: 25px;
+    width: 50%;
+    background-color: var(--azul);
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    box-shadow: 5px 10px 15px #134670;
+}
+
+.formulario label {
+    background-color: var(--laranja);
+    border: 1.5px solid var(--laranja);
+    width: max-content;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.formulario input,.formulario textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+#botao{
+    width: 25%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--laranja);
+    color: white;
+}
+
+#botao:hover{
+    width: 26%;
+}
+
+.Contato-title{
+    text-align: center;
+    margin-top: 50px;
+    gap: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.senaco{
+   position: relative;
+   bottom: 25px;
+}
+
+#aviso {
+    text-align: center;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .area-contato{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .formulario{
+        width: 85%;
+    }
+
+    #botao{
+        width: 50%;
+        height: 20%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+   .area-contato{
+        display: flex;
+    }
+
+    #senaco{
+        max-width: 100%;
+    }
+    
+    .formulario{
+        width: 60%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    #botao{
+        width: 50%;
+        height: 20%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .area-contato{
+        display: flex;
+    }
+
+    #senaco{
+        max-width: 100%;
+    }
+    
+    .formulario{
+        width: 60%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    #botao{
+        width: 50%;
+        height: 20%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+      .area-contato{
+        display: flex;
+    }
+
+    #senaco{
+        max-width: 100%;
+    }
+    
+    .formulario{
+        width: 60%;
+        height: 50%;
+        margin-bottom: 50px;
+    }
+
+    #botao{
+        width: 50%;
+        height: 20%;
+    }
+}

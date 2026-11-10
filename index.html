@@ -1,83 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
     <title>Mapa do Conhecimento</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon"
+     href="./assets/imgs/Normal (1).png" type="image/png">
+
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <header class="cabecalho">
-        <a href="../index.html" class="logo">Mapa do Conhecimento</a>
-        
+    <!--CABEÇAMMMM-->
+    <header id="header" class="header">
+
+        <div class="teste-perfil">
+            <h1><a href="./index.html">🧠Mapa do Conhecimento</a></h1>
+        </div>
+
         <nav class="menu">
-            <a href="../index.html">Inicio</a>
-            <a href="/pages/temas.html">Temas</a>
-            <a href="/pages/sobre.html">Sobre</a>
-            <a href="/pages/contato.html">Contato</a>
+            <a href="./index.html">Inicio</a>
+            <a href="./Pages/temas.html">Temas</a>
+            <a href="./Pages/sobre.html">Sobre</a>
+            <a href="./Pages/contato.html">Contato</a>
             <button id="botao-tema" type="button">🌙</button>
         </nav>
     </header>
-
-    <!-- victor osiMAIN -->
     <main>
-        <section class="destaque">
-            <div class="texto-destaque">
-                <h1>A praticidade em<br>aprender está aqui.</h1> <br>
-                <p>Explore o conhecimento de forma simples, visual e interativa. Descubra curiosidades, autores e temas que moldaram o mundo.</p>
-                 <br>
-                  <br>
-                  
-                
-                <!-- Formulário de busca simples -->
-                <form class="busca" action="/pages/temas.html">
-                    <input id="pesquisa" name="busca" type="search" placeholder="Buscar um tema, autor ou assunto">
-                    <button type="submit">Pesquisar</button>
+        <!--MAIN MAIN MAIN-->
+
+        <section class="hero">
+
+            <div class="hero-conteudo">
+                <h1>
+                    Explore o conhecimento de forma simples,
+                    visual e interativa
+                </h1>
+                <br>
+                <p>
+                    Descubra curiosidades, autores e temas que
+                    moldam o mundo. Conte com o Senac para te
+                    guiar nessa jornada!
+                </p>
+                <br>
+                <br>
+                <div class="hero-imagem">
+                <img src="./assets/imgs/senac.crdownload" alt="Fachada do Senac" class="fachada">
+
+                <img src="./assets/imgs/introd-.png" alt="Senacquinho" class="mascote">
+                 </div>
+                <br>
+                <br>
+
+
+
+                <form class="busca">
+                    <input name="busca" type="search" placeholder="Buscar um tema, autor ou assunto">
+                    <button type="submit">🔍</button>
                 </form>
             </div>
-            
-            
-            <img id="senac" src="img/image-removebg-preview.png">
+
         </section>
-        <br>
-        <br>
-        <h1>Nossas recomendação:</h1>
-        <br>
 
+        <section class="categorias">
+            <a class="cartao-categoria" href="">
+                <p class="emoji">📖</p>
+                <h2>Livros</h2>
+                <p>Nossas sugestões de leituras para expandir sua mente.</p>
+            </a>
 
-        <!-- CARTOES COM TEMAS -->
+            <a class="cartao-categoria" href="">
+                <p class="emoji">🏛️</p>
+                <h2>Passeios Culturais</h2>
+                <p>Descubra lugares históricos incríveis, museus e galerias de arte.</p>
+            </a>
 
+            <a class="cartao-categoria" href="./Pages/login.html" target="_blank">
+                <p class="emoji">🧩</p>
+                <h2>Estudo Dinamizado</h2>
+                <p>Aprenda sobre o seu tema favorito de um jeito leve, prático e divertido.</p>
+            </a>
 
-      <section class="categorias">
-    <a class="cartao-categoria" href="/pages/temas.html">
-       
-        <p class="emoji">📖</p>
-        <h2>Livros</h2>
-        <p>Nossas sugestões de leituras para expandir sua mente.</p>
-    </a>
-
-    <a class="cartao-categoria" href="/pages/temas.html">
-       
-        <p class="emoji">🏛️</p>
-        <h2>Passeios Culturais</h2>
-        <p>Descubra lugares históricos incríveis, museus e galerias de arte.</p>
-    </a>
-
-    <a class="cartao-categoria" href="/pages/login.html" target="_blank">
-    
-        <p class="emoji">🧩</p>
-        <h2>Estudo Dinamizado</h2>
-        <p>Aprenda sobre o seu tema favorito de um jeito leve, prático e divertido.</p>
-    </a>
-</section>
+        </section>
     </main>
 
-
-    <!-- RODAPÉ -->  
-    <footer>Mapa do Conhecimento • Aprender pode ser simples.</footer>
-    <script src="js/script.js"></script>
+    <!--FOOTER-->
+    <footer class="footer">
+    <div>
+    &copy;2026 Mapa do Conhecimento. Todos os direitos reservados.
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

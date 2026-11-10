@@ -2,18 +2,16 @@ const grid = document.querySelector('.grid')
 const Spanplayer = document.querySelector('.player')
 const timer = document.querySelector('.timer')
 
-const cardsData = [
-    { id: 'newton', imagem: 'Newton' },
-    { id: 'newton', imagem: 'apple' },
-    
-    { id: 'einstein', imagem: 'albert' },
-    { id: 'einstein', imagem: 'emc' },
-    
-    { id: 'santos-dumont', imagem: 'Dumont' },
-    { id: 'santos-dumont', imagem: '14bis' },
-    
-    { id: 'Shakespeare', imagem: 'SHAKESPEARE' },
-    { id: 'Shakespeare', imagem: 'skulls' },
+let segundos = 0
+let intervaloTimer = null
+
+const characters = [
+   'medidordepressao',
+   'tecnologia',
+   'gastronomia',
+   'grafico',
+   'comunicacao',
+   'moda'
 ]
 
 const createElement = (tag, className) => {
@@ -25,20 +23,23 @@ const createElement = (tag, className) => {
 var cartaUM = ''
 let cartaDOIS = ''
 
+
 const fimDeJogo = () => {
     const achounenê = document.querySelectorAll('.achounenê')
 
-    if (achounenê.length === 8) {
-        clearInterval(this.loop)
-        alert(`PARABÉNS, ${Spanplayer.innerHTML}! Seu tempo foi: ${timer.innerHTML} segundos.`)
+    if (achounenê.length === 12) {
+        clearInterval(intervaloTimer)
+        intervaloTimer = null
+        alert(`PARABÉNS, ${Spanplayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`)
     }
 }
 
-const checarCartas = () => {
-    const firstCharacter = cartaUM.getAttribute('data-character')
+const checarCartas = () =>{
+
+    const firtsCharacter = cartaUM.getAttribute('data-character')
     const secondCharacter = cartaDOIS.getAttribute('data-character')
 
-    if (firstCharacter === secondCharacter) {
+    if(firtsCharacter === secondCharacter){
         cartaUM.firstChild.classList.add('achounenê')
         cartaDOIS.firstChild.classList.add('achounenê')
 
@@ -46,73 +47,86 @@ const checarCartas = () => {
         cartaDOIS = ''
 
         fimDeJogo()
-    } else {
-        setTimeout(() => {
-            cartaUM.classList.remove('revelacarta')
-            cartaDOIS.classList.remove('revelacarta')
-
-            cartaUM = ''
-            cartaDOIS = ''
-        }, 500)
     }
+
+    else{
+        setTimeout(() =>{
+        cartaUM.classList.remove('revelacarta')
+        cartaDOIS.classList.remove('revelacarta')
+
+        cartaUM = ''
+        cartaDOIS = ''
+     }, 500)
+    }
+
 }
 
-const revelarcarta = ({ target }) => {
-    if (target.parentNode.className.includes('revelacarta')) {
+const revelarcarta = ({target}) =>{
+    if (target.parentNode.className.includes('revelacarta')){
         return
     }
 
-    if (cartaUM === '') {
-        target.parentNode.classList.add('revelacarta')
-        cartaUM = target.parentNode
-    } else if (cartaDOIS === '') {
-        target.parentNode.classList.add('revelacarta')
-        cartaDOIS = target.parentNode
-        
-    
-        checarCartas()
+    if(cartaUM === ''){
+    target.parentNode.classList.add('revelacarta')
+    cartaUM = target.parentNode
     }
+
+    else if (cartaDOIS === ''){
+    target.parentNode.classList.add('revelacarta')
+    cartaDOIS = target.parentNode
+    }
+
+    checarCartas()
+    
 }
 
-//
-const criarCartas = (item) => {
+const criarCartas = (character) => {
    const card = createElement('div', 'cartas')
    const front = createElement('div', 'face front')
    const back = createElement('div', 'face back')
 
-   front.style.backgroundImage = `url('../img/${item.imagem}.jfif')`
+   front.style.backgroundImage = `url('../assets/characters/${character}.png')`
 
     card.appendChild(front)
     card.appendChild(back)
 
     card.addEventListener('click', revelarcarta)
-    
-    card.setAttribute('data-character', item.id)
+    card.setAttribute('data-character', character)
 
     return card
 }
 
 const loadGame = () => {
-    const aleatorio = cardsData.sort(() => Math.random() - 0.5)
 
-    aleatorio.forEach((item) => {
-        const card = criarCartas(item)
+    const duplicar = [... characters, ...characters]
+
+    const aleatorio = duplicar.sort(() => Math.random() - 0.5)
+
+    duplicar.forEach((character) => {
+        const card = criarCartas(character)
         grid.appendChild(card)
     })
 }
 
 const startTimer = () => {
-    this.loop = setInterval(() => {
-        const tempoAtual = +timer.innerHTML
-        timer.innerHTML = tempoAtual + 1
+    // CONDIÇÂO DE FAZER UM CRONOMETRO CORRER POR VEZ//
+    if (intervaloTimer !== null) return
+
+    intervaloTimer = setInterval(() => {
+        segundos++
+    const minutos = Math.floor(segundos / 60) //DIVIDINDO OS NUMEROS POR 60, ja que 1 minuto tem 60 segundos ou 60 segundos sao 1 minutos. //
+    const segundosRestantes = segundos % 60  //PEGA O RESTO DA DIVISAO (1/60), PARA SABER QUANTOS FALTAM PRA COMPLETAR O MINUTO// 
+
+        timer.innerHTML = `${String(minutos).padStart(2, '0')}:${String(segundosRestantes).padStart(2, '0')}` // ESSE string CONVERTE O AS LETRAS EM NUEMROS, fu ncionaou na linha da cagada e gambiarra //
+        //ESSES padStart DEIXAM OS NUMEROS ACOMPANHADOS DO 0, TIPO AO INVES DE 5 ELE FAZ 05, mas nao funcionoukkkkkkkkkkkkkkkkkkkkkkkk//
     }, 1000)
 }
 
-window.onload = () => {
-    const name = localStorage.getItem('Nome')
-    Spanplayer.innerHTML = name || "Jogador" //
 
-    startTimer()
-    loadGame()   
+window.onload = () =>{
+const name = localStorage.getItem('Nome')
+Spanplayer.innerHTML = name
+
+startTimer()
+loadGame()   
 }
-

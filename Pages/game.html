@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="../css/varia.css">
+<link rel="shortcut icon" href="../assets/imgs/Normal (1).png" type="image/png">
 <link rel="stylesheet" href="../css/game.css">
 
-<script defer src="../js/game.js"></script>
+
 
 <title>Jogo da memoria</title>
 </head>
@@ -14,24 +17,26 @@
 <main>
     <header>
         <span class="player"></span>
-        <span>Tempo: <span class="timer">00</span>
+        <span>Tempo: <span class="timer">00:00</span></span>
     </header>
+
+
     <div class="grid">
 
         <!--<div class="cartas">
             <div class="face front"></div>
             <div class="face back"></div>
         </div>-->
+
     </div>
 
+  <div class="legenda">
+    <h4>Nesse jogo da memoria, os temas são:</h4><br>
+    <p>Moda, Administração, Comunicação,<br> Saúde, Tecnologia,
+     Gastronomia</p>
+  </div>
 
-
-    <footer class="menu"><a href="../index.html">Inicio</a>
-            <a href="../pages/temas.html">Temas</a>
-            <a href="../pages/sobre.html">Sobre</a>
-            <a href="../pages/contato.html">Contato</a>
-            <button id="botao-tema" type="button">🌙</button>
-    </footer>
 </main>
+<script src="../js/game.js"></script>
 </body>
 </html>

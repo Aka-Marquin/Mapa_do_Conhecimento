@@ -1,8 +1,11 @@
+@import url(varia.css);
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #172b3b;
+    background-color: white;
     font-family: sans-serif;
+    background: linear-gradient(var(--azul), white, var(--azul), white)
 }
 
 .login_form {
@@ -24,8 +27,8 @@ body {
     text-align: center;
 }
 .login_header h2 {
-    color: black;
-    font-size: 2.5em;
+    color: white;
+    font-size: 3em;
 }
 
 .login_header img {
@@ -43,39 +46,141 @@ body {
 
 .login_input {
     border: 2px solid #ccc;
-    border-radius: 12px;
+    border-radius: 33px;
     color: #333;
-    margin-bottom: 20px;
-    font-size: 1.5em; 
+    margin-bottom: 15px;
+    font-size: 2.5em; 
     max-width: 500px; 
     min-width: 500px;
-    padding: 20px;  
-    width: 50%;
+    padding: 15px;  
+    width: 100%;
     outline: none;
+    transition: 0.3s ease;
     box-sizing: border-box;
 }
 
 .login_button {
-    background-color: burlywood;
-    padding: 15px;
-    border-radius: 50px;
+    background-color: var(--azul);
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
     color: white;
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: bold;
     max-width: 300px;
     min-width: 250px;
-    width: 25%;
+    width: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .login_button:not(:disabled):hover {
-    background-color: #c9a074;
+    background-color: var(--laranja);
     transform: scale(1.02);
 }
 
 .login_button:disabled {
-    background-color: #bbb8b8;
-    color: #6b6565;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
     transform: none;
+}
+
+#Senaco{
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .login_header h2 {
+    font-size: 1.8em;
+  }
+
+  .login_header img {
+    width: 20vh;
+  }
+
+  .login_input {
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 1.4em;
+    padding: 12px;
+  }
+
+  .login_button {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 1.5em;
+    padding: 14px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .login_header h2 {
+    font-size: 2.2em;
+  }
+
+  .login_header img {
+    width: 25vh;
+  }
+
+  .login_input {
+    min-width: 350px;
+    max-width: 450px;
+    font-size: 1.8em;
+  }
+
+  .login_button {
+    min-width: 200px;
+    max-width: 250px;
+    font-size: 1.8em;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .login_header h2 {
+    font-size: 2.5em;
+  }
+
+  .login_header img {
+    width: 28vh;
+  }
+
+  .login_input {
+    min-width: 450px;
+    max-width: 500px;
+    font-size: 2.2em;
+  }
+
+  .login_button {
+    min-width: 220px;
+    max-width: 280px;
+    font-size: 2.2em;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .login_header h2 {
+    font-size: 3em;
+  }
+
+  .login_header img {
+    width: 30vh;
+  }
+
+  .login_input {
+    min-width: 500px;
+    max-width: 600px;
+    font-size: 2.5em;
+  }
+
+  .login_button {
+    min-width: 250px;
+    max-width: 300px;
+    font-size: 2.5em;
+  }
 }

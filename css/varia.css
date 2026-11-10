@@ -1,0 +1,103 @@
+:root {
+    --fundo: #f4f7fb;
+    --texto: #183247;
+    --branco: #ffffff;
+    --azul: #0866b3;
+    --laranja: #ff914d;
+    --altura--header: 7.5vh;
+    --altura--footer: 15vh;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#botao-tema {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--branco);
+    cursor: pointer;
+}
+
+.header {
+    min-height: 76px;
+    padding: 14px 6%;
+    background: var(--azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer{
+    padding: 5px;
+    background-color: var(--azul);
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+    max-height: 100px;
+    position: sticky; 
+    top: 100vh;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.teste-perfil{
+    display: flex;
+    gap: 10px;
+    color: white;
+     text-decoration: none;
+    color: inherit;
+}
+
+.teste-perfil a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* TENTATIVA E MUITAS FALHAS, MAS TEMOS UM MISERAVEL TEMA ESCURO*/
+body.tema-escuro {
+    --fundo: #14212d;
+    --texto: #f4f7fb;
+    --branco: #253747;
+    --azul: #245b86;
+    --laranja: #e58a4c;
+}
+
+body.tema-escuro .conteudo-pagina,
+body.tema-escuro .cartao-tema{
+    background: #1d2c38;
+    color: #f2f2f2;
+}
+
+body.tema-escuro .conteudo-pagina h1{
+    color: var(--laranja);
+}
+
+body.tema-escuro footer {
+    color:var(--laranja);
+}
+

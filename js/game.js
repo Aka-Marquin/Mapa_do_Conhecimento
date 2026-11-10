@@ -6,14 +6,12 @@ let segundos = 0
 let intervaloTimer = null
 
 const characters = [
-   'Aristoteles',
-   'Galileo',
-   'goat',
-   'Marie Curie',
-   'Newton',
-   'ptolomeo',
-   'René',
-   'tesla'
+   'medidordepressao',
+   'tecnologia',
+   'gastronomia',
+   'grafico',
+   'comunicacao',
+   'moda'
 ]
 
 const createElement = (tag, className) => {
@@ -29,7 +27,7 @@ let cartaDOIS = ''
 const fimDeJogo = () => {
     const achounenê = document.querySelectorAll('.achounenê')
 
-    if (achounenê.length === 16) {
+    if (achounenê.length === 12) {
         clearInterval(intervaloTimer)
         intervaloTimer = null
         alert(`PARABÉNS, ${Spanplayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`)
@@ -87,7 +85,7 @@ const criarCartas = (character) => {
    const front = createElement('div', 'face front')
    const back = createElement('div', 'face back')
 
-   front.style.backgroundImage = `url('../assets/characters/${character}.jpg')`
+   front.style.backgroundImage = `url('../assets/characters/${character}.png')`
 
     card.appendChild(front)
     card.appendChild(back)

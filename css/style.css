@@ -97,7 +97,7 @@
     font-size: 27px;
 }
 
-.busca input {
+/* .busca input {
     width: 75%;
     padding: 10px 14px;
     outline: none;
@@ -109,9 +109,33 @@
     border-radius: 25px;
     background: var(--laranja);
     cursor: pointer;
+} */
+
+.busca{
+    margin: 0 auto;
+    display: flex;
+    max-width: 75%;
+    border-radius: 30px;
+    background: var(--branco);
 }
 
+.busca input {
+    width: 75%;
+    padding: 10px 14px;
+    width: 90%;
+    padding: 10px 25px 0px 25px;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
 
+.busca button {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 25px;
+    background: var(--laranja);
+    cursor: pointer;
+}
 @media only screen and (max-width: 600px){
    .header{
     display: flex;

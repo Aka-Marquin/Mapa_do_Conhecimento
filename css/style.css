@@ -263,18 +263,13 @@
     padding: 3px;
    }
 
- .hero{
+ .hero,  .mascote,  .fachada{
+    margin: 0 auto;
     padding-top: 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
-    text-align: center;
  }
 
- .fachada{max-width: 150%; /*align-self: center;*/ /*margin: 0 auto;*/}
- .mascote {max-width: 90%;}
+ .fachada{width: 100%; max-width: 950px; /*align-self: center;*/ margin: 0 auto;}
+ .mascote {width: 90%; max-width: 590px;}
 
  .busca input{max-width: 100%; margin-bottom: 10px;}
  .busca button{width: 10%; height: 10%;}

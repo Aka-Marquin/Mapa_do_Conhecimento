@@ -252,7 +252,7 @@
  }
 }  
 
-@media only screen and (min-width: 1200px){
+/* @media only screen and (min-width: 1200px){
 
    .header{
     display: flex;
@@ -271,10 +271,15 @@
     align-items: center;
     font-size: small;
     text-align: center;
- }
+ } */
 
+<<<<<<< Updated upstream
  .fachada{max-width: 150%; align-self: center; /*margin: 0 auto;*/ right: 100px;}
  .mascote {max-width: 80%;}
+=======
+ /* .fachada{max-width: 150%; /*align-self: center;*/ /*margin: 0 auto;*/} */
+ /* .mascote {max-width: 90%;}
+>>>>>>> Stashed changes
 
  .busca input{max-width: 100%; margin-bottom: 10px;}
  .busca button{width: 10%; height: 10%;}
@@ -294,4 +299,4 @@
     width: 50%;
     margin: 0 auto;
  }
-}
+} */

@@ -49,17 +49,20 @@
 }
 
 #botao{
-    width: 25%;
     padding: 15px;
     display: flex;
     justify-content: center;
     align-self: center;
     background-color: var(--laranja);
     color: white;
+    margin-top: 25px;
+    max-width: 30%;
 }
 
 #botao:hover{
-    width: 26%;
+        transform: translateY(-5%) scale(1.1);
+        /* transform: scale(1.1); */
+        /* box-shadow: 3px 3px 3px var(--laranja); */
 }
 
 .Contato-title{
